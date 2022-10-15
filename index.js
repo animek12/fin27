@@ -93,7 +93,7 @@ print(`${e}`.error)
     for (let dill of fadhil) {
     if (dill.isGroup == false) {
     if (dill.status == "offer") {
-    let pa7rick = await conn.sendTextWithMentions(dill.from, `*Crizzy-Bot* tidak bisa menerima panggilan ${dill.isVideo ? `video` : `suara`}. Maaf @${dill.from.split('@')[0]} kamu akan diblockir. Jika tidak sengaja silahkan hubungi Owner untuk dibuka !`)
+    let pa7rick = await conn.sendTextWithMentions(dill.from, `*Fin-Bot* tidak bisa menerima panggilan ${dill.isVideo ? `video` : `suara`}. Maaf @${dill.from.split('@')[0]} kamu akan diblockir. Jika tidak sengaja silahkan hubungi Owner untuk dibuka !`)
     conn.sendContact(dill.from, global.owner, pa7rick)
     await sleep(8000)
     await conn.updateBlockStatus(dill.from, "block")
